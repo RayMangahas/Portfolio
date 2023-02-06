@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.WhackAMole {
+  height: 700px;
+  width: 600px;
+  background: teal;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  position: relative;
+}
+
+/* get holes in line and within the div */
+.hole {
+  display: inline-block;
+  width: 32%;
+  margin: 0;
+  position: relative;
+}
+
+/* get inside container */
+.hole img {
+  width: 100%;
+}
+
+.mole {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+}
+
+.score {
+  position: absolute;
+  top: -40px;
+  font-family: monospace;
+  font-size: 32px;
+}
